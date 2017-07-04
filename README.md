@@ -13,9 +13,9 @@ Approach:  Create and validate 3 different set of NLP machine learning models:
 #### Set 5: Use a word embedding representation like word2vec 
 
 ## Data 
-The raw data can be downloaded from : https://data.boston.gov/dataset/vision-zero-entry
+- The raw data can be downloaded from : https://data.boston.gov/dataset/vision-zero-entry
 
-For word2vec implementation,  Google News corpus (3 billion running words) can be downloaded from : https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
+- For word2vec implementation,  Google News corpus (3 billion running words) can be downloaded from : https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
 
 ## Files
 - main.ipynb includes all the codes for cleaning the data and models.
