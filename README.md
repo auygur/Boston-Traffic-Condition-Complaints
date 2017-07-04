@@ -6,7 +6,7 @@ Problem: The task is to do text classification on a dataset of complaints about 
 
 
 Approach:  Create and validate 3 different set of NLP machine learning models:
-#### Set 1: A baseline multi-class classification model using a bag-of-word approach, and validating a macro f1-score.
+#### Set 1: A baseline multi-class classification model using a bag-of-word approach, and validating with macro f1-scores.
 #### Set 2: Improve the model using more complex text features, including n-grams, character n-grams and possibly domain-specific features.
 #### Set 3: Clustering: Applying LDA, NMF and K-Means to the whole dataset. Find clusters or topics that match well with some of the ground truth labels. ARI scores are used for comparing different models.
 #### Set 4: Improve the class definition for REQUESTTYPE by using the results of the clustering and results of the previous classification model and apply the topic modeling and clustering techniques.
