@@ -1,35 +1,24 @@
-# Direct Marketing Campaign Success (Banking)
+# Boston Traffic Condition Complaints
 
-Problem: A banking institution ran a direct marketing campaign based on phone calls. Often, more than one contact to the same client was required, in order to assess if the product (bank term deposit) would be subscribed or not. The task is to predict whether someone will subscribe to the term deposit or not based on the given information.
-
-Approach:  Create and validate 3 different set of machine learning models:
-#### Set 1:
-1) KNeighborsClassifier
-2) GaussianNB
-3) LinearDiscriminantAnalysis
-4) MLPClassifier
-5) LogisticRegression
-
-#### Set 2:
-1) GradientBoostingClassifier 
-2) AdaBoostClassifier 
-3) RandomForestClassifier 
-4) DecisionTreeClassifier 
-5) ExtraTreesClassifier
+Problem: The task is to do text classification on a dataset of complaints about traffic conditions to the city of Boston. There are two goals:
+- First, try to predict the type of complaint (“REQUESTTYPE”) from the complaint text.
+- Second, try to come up with a better categorization of the data into semantic categories.
 
 
-#### Set 3: Following classifiers used Logistic regression,GaussianNB,GradientBoostingClassifier,ExtraTreeClassifier with variable weights. 
-1) ExtraTreesClassifier
-2) VotingClassifier 
-3) StackingClassifier
+Approach:  Create and validate 3 different set of NLP machine learning models:
+#### Set 1: A baseline multi-class classification model using a bag-of-word approach, and validating a macro f1-score.
+#### Set 2: Improve the model using more complex text features, including n-grams, character n-grams and possibly domain-specific features.
+#### Set 3: Clustering: Applying LDA, NMF and K-Means to the whole dataset. Find clusters or topics that match well with some of the ground truth labels. ARI scores are used for comparing different models.
+#### Set 4: Improve the class definition for REQUESTTYPE by using the results of the clustering and results of the previous classification model and apply the topic modeling and clustering techniques.
+#### Set 5: Use a word embedding representation like word2vec 
 
-- Also tried resampling techniques (smote, undersampling, oversampling etc)
+## Data 
+The raw data can be downloaded from : https://data.boston.gov/dataset/vision-zero-entry
 
 
 ## Files
-- data folder includes data.csv for training and cross-validation, holdout.csv for testing and data_dictionary.txt
 - main.ipynb includes all the codes for cleaning the data and models.
-
+- .travis.yml is the necessary file for testing py file on travis website.
  
  
 
